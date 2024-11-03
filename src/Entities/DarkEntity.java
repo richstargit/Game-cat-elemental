@@ -41,7 +41,7 @@ public class DarkEntity extends Entity implements movementable,healthable,attack
     
     private boolean start = true;
     
-    Thread thread;
+    private Thread thread;
     
     public DarkEntity(float x, float y, int width, int height,int health,Player player,Playing playing) {
         super(x, y, width, height);

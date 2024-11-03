@@ -35,15 +35,15 @@ public class DarkEntity extends Entity implements movementable,healthable,attack
     
     private Playing playing;
     
-    private long takedamage=0;
+    private long takedamage = 0;
     private double damagacd = 1;
     private int damage = 0;
-    
+
     private boolean start = true;
-    
+
     private Thread thread;
-    
-    public DarkEntity(float x, float y, int width, int height,int health,Player player,Playing playing) {
+
+    public DarkEntity(float x, float y, int width, int height, int health, Player player, Playing playing) {
         super(x, y, width, height);
         this.health = health;
         importimg();

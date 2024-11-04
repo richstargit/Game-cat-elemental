@@ -58,7 +58,6 @@ public class Game extends JFrame implements Runnable{
         initClass();
         gamePanel = new GamePanel(this);
         add(gamePanel);
-        //addKeyListener(new Listenerkey(gamePanel));
         addWindowFocusListener(new WindowFocusListener(){
             @Override
             public void windowGainedFocus(WindowEvent e) {
@@ -69,8 +68,6 @@ public class Game extends JFrame implements Runnable{
                 gamePanel.getGame().windowlost();
             }
         });
-        //addMouseMotionListener(new ListenerMouse(gamePanel));
-        //addMouseListener(new ListenerMouse(gamePanel));
         gamePanel.requestFocus();
         startGameLoop();
     }

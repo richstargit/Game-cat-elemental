@@ -77,9 +77,6 @@ public class Game extends JFrame implements Runnable{
         selectlevel = new SelectLevel(this);
         replay = new Replay(this);
         initLevel();
-//        levelManager = new LevelManager(this);
-//        player = new Player(100,100,80,60);
-//        player.loadlvlData(levelManager.getCurrentLevel().getLvlData());
     }
     
     private void initLevel(){
